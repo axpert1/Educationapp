@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_window"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.bibliophile.custom.TextViewRegularBold
+        android:id="@+id/txtDilogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical">
+
+    <com.bibliophile.custom.TextViewRegularBold
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Delhi"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp" />
+
+</LinearLayout>

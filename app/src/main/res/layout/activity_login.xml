@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/dp_10"
+        android:padding="@dimen/dp_10"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_below="@+id/imgIcon"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/dp_10"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="@dimen/dp_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+
+                <com.bibliophile.custom.MaterialTextField
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mtf_image="@drawable/ic_person_black_24dp"
+                    app:mtf_labelColor="@color/colorPrimaryDark">
+
+                    <com.bibliophile.custom.EditTextRegular
+                        android:id="@+id/eTextEmailPhone"
+                        style="@style/edit_text_style_login_signup"
+
+                        android:drawablePadding="@dimen/dp_10"
+                        android:hint="@string/email"
+                        android:inputType="text"
+                        android:text="center@gmail.com" />
+                </com.bibliophile.custom.MaterialTextField>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <com.bibliophile.custom.MaterialTextField
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mtf_image="@drawable/ic_lock_black_24dp"
+                    app:mtf_labelColor="@color/colorPrimaryDark">
+
+                    <com.bibliophile.custom.EditTextRegular
+                        android:id="@+id/eTextLoginPass"
+                        style="@style/edit_text_style_login_signup"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:hint="@string/password"
+                        android:text="123456"
+                        android:inputType="textPassword" />
+                </com.bibliophile.custom.MaterialTextField>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray" />
+
+                <com.bibliophile.custom.TextViewRegular
+                    android:id="@+id/txtForgotPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_10"
+                    android:text="@string/forgot_password"
+
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/sp_12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal">
+
+                    <com.bibliophile.custom.RippleView
+                        android:id="@+id/btnLogin"
+                        style="@style/button_style_login_signup"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:text="@string/login"
+                        app:alphaFactor="0.7"
+
+                        app:rippleColor="@color/btnRipple" />
+
+                    <com.bibliophile.custom.RippleView
+
+                        android:id="@+id/btnJoinus"
+                        style="@style/button_style_login_signup"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:text="@string/join_us"
+                        app:alphaFactor="0.7"
+                        app:rippleColor="@color/btnRipple" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/llEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imvAccount"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:tint="@color/gray"
+            android:src="@mipmap/ic_account" />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/account"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16"
+             />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:id="@+id/llChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imvChangePassword"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:tint="@color/gray"
+            android:src="@mipmap/ic_password" />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/change_password"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16"
+             />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_2"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imvNotif"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@mipmap/ic_notifi_bottom_bar"
+            android:tint="@color/gray"
+            />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:id="@+id/textViewRegularBold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/push_notification"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16"
+             />
+
+        <Switch
+            android:id="@+id/swPushNotifi"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_50"
+            android:checked="true"
+            android:theme="@style/SwitchTheme" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_2"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_2"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imvMailf"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@mipmap/ic_mail"
+            android:tint="@color/gray"
+            />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/mail_notification"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16"
+             />
+
+        <Switch
+            android:id="@+id/swPushMailfi"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_50"
+            android:checked="true"
+            android:theme="@style/SwitchTheme" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:id="@+id/llSupport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imvContactUs"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@mipmap/ic_contactus"
+            android:tint="@color/gray" />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/contact_us"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16"
+             />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:id="@+id/llRateUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imvRateUs"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:tint="@color/gray"
+            android:src="@mipmap/ic_rate" />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/rate_us"
+            
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:id="@+id/llTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imvTermsCond"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:tint="@color/gray"
+            android:src="@mipmap/ic_terms" />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16"
+             />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:id="@+id/llLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imvLogout"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/dp_5"
+            android:src="@mipmap/ic_logout"
+            android:tint="@color/gray"
+            />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/logout"
+            
+            android:textColor="@color/gray"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+</LinearLayout>

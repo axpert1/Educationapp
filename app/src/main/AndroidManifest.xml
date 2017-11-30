@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bibliophile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.bibliophile.AppInitialization"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- Firebase Notifications -->
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.bibliophile.activitys.SplaceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BrandedLaunch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.bibliophile.activitys.SelectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BrandedLaunch" />
+        <activity
+            android:name="com.bibliophile.activitys.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BrandedLaunch" />
+        <activity
+            android:name="com.bibliophile.activitys.JoinUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BrandedLaunch" />
+        <activity
+            android:name="com.bibliophile.activitys.TestActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.GroupActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.DashboardActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.JoinStudentListActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.GroupViewActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.CommentActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.CenterStudentListActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.bibliophile.activitys.CenterProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.StudentProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.AddStudentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.ContactusActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.StateAndCityActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.StudentListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.bibliophile.activitys.TestSeriesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "622878850366",
+    "firebase_url": "https://bibliophile-f6a2e.firebaseio.com",
+    "project_id": "bibliophile-f6a2e",
+    "storage_bucket": "bibliophile-f6a2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622878850366:android:bb6a3beea10268c1",
+        "android_client_info": {
+          "package_name": "com.bibliophile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622878850366-f7j2dmk41on14e809cqo3vn7vtqermjq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bibliophile",
+            "certificate_hash": "81ec1aa4171ab5c99a02f72e24258273ab6de4e1"
+          }
+        },
+        {
+          "client_id": "622878850366-7d8nt585qa857ckt1j1ks5dcv0n6c8t0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-GqXLuDB0NZmh24sbc5uIr4RnmcdccXY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622878850366-7d8nt585qa857ckt1j1ks5dcv0n6c8t0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

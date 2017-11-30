@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <com.bibliophile.custom.ImageViewCircle
+                android:layout_width="30dp"
+                android:id="@+id/profileImage"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_margin="@dimen/dp_5" />
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <com.bibliophile.custom.TextViewRegularBold
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="@string/demo_name"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp_14" />
+
+                <com.bibliophile.custom.TextViewRegular
+                    android:id="@+id/dateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:singleLine="true"
+                    android:text="@string/demo_time"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.bibliophile.custom.TextViewRegular
+            android:id="@+id/messageTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp_40"
+            android:padding="10dp"
+            android:text="@string/demo"
+            android:textColor="@color/textColor" />
+        <com.bibliophile.custom.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:text="@string/demo_comments"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

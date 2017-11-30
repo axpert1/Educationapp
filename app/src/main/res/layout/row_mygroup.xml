@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+
+    <com.bibliophile.custom.ImageViewCircle
+        android:id="@+id/profileImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <com.bibliophile.custom.TextViewRegularBold
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:minHeight="@dimen/dp_40"
+        android:textSize="@dimen/sp_10"
+        android:singleLine="false"
+        android:text="Motivational Group"
+        android:textColor="@color/textColor" />
+
+
+</LinearLayout>

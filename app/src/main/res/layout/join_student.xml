@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal">
+
+    <com.bibliophile.custom.ImageViewCircle
+        android:layout_width="@dimen/dp_50"
+        android:id="@+id/profileImage"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_margin="@dimen/dp_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.bibliophile.custom.TextViewRegularBold
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left|bottom"
+            android:singleLine="true"
+            android:text="@string/demo_name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_18" />
+
+        <com.bibliophile.custom.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|top|left"
+            android:text="@string/demo_center"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+
+    <com.bibliophile.custom.RippleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:background="@drawable/join_bg"
+        android:gravity="center"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:text="Join"
+        android:textColor="@color/white" />
+</LinearLayout>

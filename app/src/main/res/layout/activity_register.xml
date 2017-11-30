@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bibliophile.activitys.JoinUsActivity">
+    <include layout="@layout/toolbar" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20">
+
+                        <com.bibliophile.custom.ImageViewCircle
+                            android:id="@+id/profilePic"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@drawable/user_pratikshya" />
+
+                        <ImageView
+                            android:id="@+id/iv_camera"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/ovel_shape"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_insert_photo_black_24dp"
+                            android:tint="@color/white"
+
+                            />
+                    </FrameLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <com.bibliophile.custom.EditTextRegular
+                            android:id="@+id/edtCenterName"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_account"                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/canter_name"
+                            android:inputType="textEmailAddress" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+
+                        <com.bibliophile.custom.EditTextRegular
+                            android:id="@+id/edtEmail"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_email_black"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/center_email"
+                            android:inputType="textEmailAddress" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+
+                        <com.bibliophile.custom.EditTextRegular
+                            android:id="@+id/edtPersonName"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_cellphone_black"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/contact_person"
+                            android:maxLength="15" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+
+                        <com.bibliophile.custom.EditTextRegular
+                            android:id="@+id/edtPhone"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_cellphone_black"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/contact_no"
+                            android:inputType="number"
+                            android:maxLength="14" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+
+                        <com.bibliophile.custom.EditTextRegular
+                            android:id="@+id/edtAddress"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_address"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/contact_address"
+                            android:maxLength="14" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+
+                        <com.bibliophile.custom.TextViewRegular
+                            android:id="@+id/txtState"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_state"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/state"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+                        <LinearLayout
+                            android:id="@+id/llCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <com.bibliophile.custom.TextViewRegular
+                                android:id="@+id/txtCity"
+                                style="@style/edit_text_style_login_signup"
+                                android:drawableLeft="@drawable/ic_city"
+                                android:drawablePadding="@dimen/dp_10"
+                                android:hint="@string/city"
+                                android:inputType="text"
+                                android:maxLength="14"
+                                android:textColor="@color/black" />
+
+                            <View
+
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/gray" />
+
+                        </LinearLayout>
+
+
+                        <com.bibliophile.custom.EditTextRegular
+                            android:id="@+id/edtPincode"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_pincode"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/pincode"
+                            android:inputType="number"
+                            android:maxLength="14" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+                        <com.bibliophile.custom.TextViewRegular
+                            android:id="@+id/txtCourses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:drawableLeft="@drawable/ic_course"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="left|center_vertical"
+                            android:hint="@string/select_courses"
+                            android:inputType="text"
+                            android:minHeight="@dimen/dp_40"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_18" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+
+                        <com.bibliophile.custom.TextViewRegular
+
+                            android:id="@+id/txtPackage"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_package"
+
+                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/select_package"
+
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+                        <com.bibliophile.custom.TextViewRegular
+                            android:id="@+id/txtPayment"
+                            style="@style/edit_text_style_login_signup"
+                            android:drawableLeft="@drawable/ic_amount"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:hint="@string/payment"
+                            android:inputType="text"
+                            android:maxLength="14"
+                            android:textColor="@color/black" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray" />
+
+
+                    </LinearLayout>
+
+
+                    <com.bibliophile.custom.RippleView
+                        android:id="@+id/btnRegister"
+                        style="@style/button_style_login_signup"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:text="@string/register" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

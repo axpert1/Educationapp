@@ -1,0 +1,143 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppTheme.BrandedLaunch" parent="AppTheme.NoActionBar">
+        <!--<item name="android:windowBackground">@drawable/style_</item>-->
+
+    </style>
+
+    <style name="edit_text_style_login_signup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="button_style_login_signup" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/btnBG</item>
+        <item name="android:elevation">@dimen/dp_2</item>
+        <item name="android:translationZ">@dimen/dp_5</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="button_style_simple_text_white" parent="@style/Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">@dimen/dp_2</item>
+        <item name="android:translationZ">@dimen/dp_5</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DialogAnimation_2">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">@color/purple</item>
+    </style>
+
+    <style name="ToolBarWithNavigationBack">
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_material</item>
+    </style>
+
+    <style name="MaterialDialogSheet" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/MaterialDialogSheetAnimation</item>
+    </style>
+
+    <style name="MaterialDialogSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/popup_show</item>
+        <item name="android:windowExitAnimation">@anim/popup_hide</item>
+    </style>
+
+    <style name="textSimple">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/dp_40</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+    <style name="textSmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <style name="textHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_40</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:textColor">@color/colorPrimary</item>-->
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="radiobutton_style_form">
+        <!--<item name="android:button">@drawable/radio_icon</item>-->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/dp_5</item>
+        <item name="android:layout_marginLeft">@dimen/dp_5</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:theme">@style/MyRadioButton</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+    </style>
+
+    <style name="editSimple">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/dp_50</item>
+        <!--<item name="android:layout_marginBottom">@dimen/dp_10</item>-->
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">@color/btnBG</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <!--<item name="android:background">@drawable/editshape_rect_fill</item>-->
+        <item name="android:paddingLeft">@dimen/dp_10</item>
+        <item name="android:paddingRight">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+</resources>

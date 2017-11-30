@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bibliophile.custom.ImageViewCircle xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="10dp" />
+
+    <com.bibliophile.custom.RippleView
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:alphaFactor="0.7"
+        android:background="@color/colorAccent"
+        app:rippleColor="#58FAAC"></com.bibliophile.custom.RippleView>
+</LinearLayout>

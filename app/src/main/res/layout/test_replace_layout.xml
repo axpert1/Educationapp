@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutQueRow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/TSTnameImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:textColor="@color/btnRipple" />
+
+            <ImageView
+                android:id="@+id/TSTiv_camera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|left"
+                android:visibility="gone"
+
+
+                />
+        </FrameLayout>
+
+
+        <RadioGroup
+            android:id="@+id/rgAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.bibliophile.custom.R_button
+                android:id="@+id/rA"
+                style="@style/radiobutton_style_form"
+                android:text="@string/a" />
+
+            <com.bibliophile.custom.R_button
+                android:id="@+id/rB"
+                style="@style/radiobutton_style_form"
+                android:text="@string/b" />
+
+            <com.bibliophile.custom.R_button
+                android:id="@+id/rC"
+                style="@style/radiobutton_style_form"
+                android:text="@string/c" />
+
+            <com.bibliophile.custom.R_button
+                android:id="@+id/rD"
+                style="@style/radiobutton_style_form"
+                android:text="@string/d" />
+            <com.bibliophile.custom.R_button
+                android:id="@+id/rSkip"
+                style="@style/radiobutton_style_form"
+                android:text="@string/skip" />
+        </RadioGroup>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
